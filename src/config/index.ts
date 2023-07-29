@@ -1,6 +1,6 @@
 import dotenv from "dotenv"
 
-import { StageEnvironment } from "@shared"
+import { StageEnvironment } from "@shared/types"
 
 dotenv.config()
 
