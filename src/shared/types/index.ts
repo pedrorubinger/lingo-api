@@ -1,1 +1,1 @@
-export * from "../types/StageEnvironment"
+export * from "@shared/types/StageEnvironment"
