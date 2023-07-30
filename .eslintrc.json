@@ -12,6 +12,7 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }
