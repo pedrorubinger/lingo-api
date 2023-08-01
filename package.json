@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "dev": "nodemon -delay 500ms --watch 'src/' --exec 'ts-node -r tsconfig-paths/register --files src/index.ts' -e ts",
+    "docker:up": "docker-compose up --build",
+    "docker:down": "docker-compose down",
     "eslint:fix": "eslint --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
