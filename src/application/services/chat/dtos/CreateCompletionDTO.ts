@@ -1,7 +1,11 @@
 import { IError, Either } from "@shared/types"
 
 export interface ICreateCompletionInput {
-  text: string
+  prompt: string
 }
 
-export type ICreateCompletionOutput = Either<IError, boolean>
+interface ICreateCompletionResponse {
+  message: string
+}
+
+export type ICreateCompletionOutput = Either<IError, ICreateCompletionResponse>

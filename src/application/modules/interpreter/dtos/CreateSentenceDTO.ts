@@ -1,7 +1,11 @@
 import { Either, IError } from "@shared/types"
 
 export interface ICreateSentenceInput {
-  text: string
+  prompt: string
 }
 
-export type ICreateSentenceOutput = Either<IError, boolean>
+interface ICreateSenteceResponse {
+  message: string
+}
+
+export type ICreateSentenceOutput = Either<IError, ICreateSenteceResponse>

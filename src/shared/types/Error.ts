@@ -1,5 +1,6 @@
 export enum ErrorCode {
   INTERNAL = "INTERNAL_SERVER_ERROR",
+  CHAT_SERVICE_NO_MESSAGE_RETURN = "CHAT_SERVICE_NO_MESSAGE_RETURN",
 }
 
 export interface IError {
