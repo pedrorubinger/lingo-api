@@ -13,6 +13,7 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "semi": ["error", "never"],
-    "@typescript-eslint/no-explicit-any": "off"
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-extra-semi": "off"
   }
 }
