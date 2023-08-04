@@ -1,7 +1,8 @@
-import { IError, Either } from "@shared/types"
+import { IError, Either, TranslatorLanguage } from "@shared/types"
 
 export interface ICreateCompletionInput {
-  prompt: string
+  sentence: string
+  language: TranslatorLanguage
 }
 
 interface ICreateCompletionResponse {

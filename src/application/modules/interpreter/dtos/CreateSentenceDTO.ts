@@ -1,7 +1,8 @@
-import { Either, IError } from "@shared/types"
+import { Either, IError, TranslatorLanguage } from "@shared/types"
 
 export interface ICreateSentenceInput {
-  prompt: string
+  sentence: string
+  language: TranslatorLanguage
 }
 
 interface ICreateSenteceResponse {

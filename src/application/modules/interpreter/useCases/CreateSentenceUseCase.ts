@@ -13,7 +13,10 @@ export class CreateSentenceUseCase
 {
   constructor(@inject("ChatService") private chatService: IChatService) {}
 
-  async exec({ prompt }: ICreateSentenceInput): Promise<ICreateSentenceOutput> {
-    return await this.chatService.create({ prompt })
+  async exec({
+    sentence,
+    language,
+  }: ICreateSentenceInput): Promise<ICreateSentenceOutput> {
+    return await this.chatService.create({ sentence, language })
   }
 }

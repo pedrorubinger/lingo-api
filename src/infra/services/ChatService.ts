@@ -1,7 +1,13 @@
 import { inject, injectable } from "inversify"
 import { OpenAIApi } from "openai"
 
-import { AppError, ErrorCode, left, right } from "@shared/types"
+import {
+  AppError,
+  ErrorCode,
+  TranslatorLanguage,
+  left,
+  right,
+} from "@shared/types"
 import { IChatService } from "@application/services"
 import {
   ICreateCompletionInput,
@@ -15,9 +21,22 @@ export class ChatService implements IChatService {
   constructor(@inject("OpenAIApi") private api: OpenAIApi) {}
 
   async create({
-    prompt,
+    sentence,
+    language,
   }: ICreateCompletionInput): Promise<ICreateCompletionOutput> {
     try {
+      const lang =
+        TranslatorLanguage[
+          language as string as keyof typeof TranslatorLanguage
+        ]
+      const prompt = `
+        Translate the following sentence to ${lang}.
+        Remember: Do not translate it literally.
+        You can adapt the text to make it sound more natural.
+        Provide only the translated sentence, without any additional content.
+
+        The sentence you must translate is: ${sentence}
+      `
       const response = await this.api.createChatCompletion({
         model: this.model,
         temperature: 0,
