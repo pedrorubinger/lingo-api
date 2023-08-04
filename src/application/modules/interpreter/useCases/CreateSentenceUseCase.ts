@@ -1,6 +1,6 @@
 import { inject, injectable } from "inversify"
 
-import { IUseCase } from "@core/business"
+import { IUseCase } from "@core"
 import {
   ICreateSentenceInput,
   ICreateSentenceOutput,
