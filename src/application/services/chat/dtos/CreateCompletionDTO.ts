@@ -1,8 +1,8 @@
-import { IError, Either, TranslatorLanguage } from "@shared/types"
+import { IError, Either, TranslatorLanguageLabel } from "@shared/types"
 
 export interface ICreateCompletionInput {
   sentence: string
-  language: TranslatorLanguage
+  language: TranslatorLanguageLabel
 }
 
 interface ICreateCompletionResponse {

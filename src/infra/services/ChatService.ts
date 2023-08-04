@@ -5,6 +5,7 @@ import {
   AppError,
   ErrorCode,
   TranslatorLanguage,
+  TranslatorLanguageLabel,
   left,
   right,
 } from "@shared/types"
@@ -26,9 +27,7 @@ export class ChatService implements IChatService {
   }: ICreateCompletionInput): Promise<ICreateCompletionOutput> {
     try {
       const lang =
-        TranslatorLanguage[
-          language as string as keyof typeof TranslatorLanguage
-        ]
+        TranslatorLanguageLabel[language as unknown as TranslatorLanguage]
       const prompt = `
         Translate the following sentence to ${lang}.
         Remember: Do not translate it literally.
