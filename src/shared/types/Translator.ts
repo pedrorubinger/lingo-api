@@ -1,9 +1,23 @@
 export enum TranslatorLanguageLabel {
-  PT_BR = "Brazilian Portuguese",
-  EN = "English",
+  SPANISH = "Español",
+  PORTUGUESE = "Português",
+  GERMAN = "Deutsch",
+  ENGLISH = "English",
+  ITALIAN = "Italiano",
+  FRENCH = "Français",
+  RUSSIAN = "Русский",
+  JAPANESE = "Japanese",
+  ARABIC = "Arabic",
 }
 
 export enum TranslatorLanguage {
-  PT_BR = "PT_BR",
-  EN = "EN",
+  SPANISH = "SPANISH",
+  PORTUGUESE = "PORTUGUESE",
+  GERMAN = "GERMAN",
+  ENGLISH = "ENGLISH",
+  ITALIAN = "ITALIAN",
+  FRENCH = "FRENCH",
+  RUSSIAN = "RUSSIAN",
+  JAPANESE = "JAPANESE",
+  ARABIC = "ARABIC",
 }
