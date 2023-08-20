@@ -12,7 +12,7 @@ import {
 import { IChatService } from "@application/services"
 import {
   ICreateTranslationInput,
-  ICreateCompletionOutput,
+  ICreateTranslationOutput,
 } from "@application/services/chat/dtos"
 
 @injectable()
@@ -24,7 +24,7 @@ export class ChatService implements IChatService {
   async createTranslation({
     sentence,
     language,
-  }: ICreateTranslationInput): Promise<ICreateCompletionOutput> {
+  }: ICreateTranslationInput): Promise<ICreateTranslationOutput> {
     try {
       const lang =
         TranslatorLanguageLabel[language as unknown as TranslatorLanguage]

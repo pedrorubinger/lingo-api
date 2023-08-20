@@ -9,4 +9,7 @@ interface ICreateTranslationResponse {
   message: string
 }
 
-export type ICreateCompletionOutput = Either<IError, ICreateTranslationResponse>
+export type ICreateTranslationOutput = Either<
+  IError,
+  ICreateTranslationResponse
+>
