@@ -1,4 +1,3 @@
-# Use an official Node.js runtime as the base image
 FROM node:14
 
 # Set the working directory in the container
@@ -16,7 +15,7 @@ COPY . .
 # Build the TypeScript code
 RUN npm run build
 
-# Expose the port your Node.js application listens on (if any)
+# Expose the port the Node.js application listens on
 ENV PORT 3333
 EXPOSE $PORT
 
