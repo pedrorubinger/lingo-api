@@ -21,7 +21,7 @@ export class ChatService implements IChatService {
 
   constructor(@inject("OpenAIApi") private api: OpenAIApi) {}
 
-  async create({
+  async createTranslation({
     sentence,
     language,
   }: ICreateCompletionInput): Promise<ICreateCompletionOutput> {

@@ -17,6 +17,6 @@ export class CreateSentenceUseCase
     sentence,
     language,
   }: ICreateSentenceInput): Promise<ICreateSentenceOutput> {
-    return await this.chatService.create({ sentence, language })
+    return await this.chatService.createTranslation({ sentence, language })
   }
 }
