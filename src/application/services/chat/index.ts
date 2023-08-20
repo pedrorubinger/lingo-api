@@ -1,10 +1,10 @@
 import {
-  ICreateCompletionInput,
+  ICreateTranslationInput,
   ICreateCompletionOutput,
 } from "application/services/chat/dtos"
 
 export interface IChatService {
   createTranslation(
-    input: ICreateCompletionInput
+    input: ICreateTranslationInput
   ): Promise<ICreateCompletionOutput>
 }

@@ -11,7 +11,7 @@ import {
 } from "@shared/types"
 import { IChatService } from "@application/services"
 import {
-  ICreateCompletionInput,
+  ICreateTranslationInput,
   ICreateCompletionOutput,
 } from "@application/services/chat/dtos"
 
@@ -24,7 +24,7 @@ export class ChatService implements IChatService {
   async createTranslation({
     sentence,
     language,
-  }: ICreateCompletionInput): Promise<ICreateCompletionOutput> {
+  }: ICreateTranslationInput): Promise<ICreateCompletionOutput> {
     try {
       const lang =
         TranslatorLanguageLabel[language as unknown as TranslatorLanguage]
