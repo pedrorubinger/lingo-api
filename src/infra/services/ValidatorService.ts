@@ -1,11 +1,9 @@
-import { ValidationError, validate } from "class-validator"
+import { validate } from "class-validator"
 
-interface IValidatorValidateOutput {
-  isValid: boolean
-  errors: ValidationError[] | null
-}
+import { IValidatorService } from "@application/services"
+import { IValidatorValidateOutput } from "@application/services/validator/dtos/ValidatorValidateOutput"
 
-export class ValidatorService {
+export class ValidatorService implements IValidatorService {
   constructor() {}
 
   async validate(data: object): Promise<IValidatorValidateOutput> {
