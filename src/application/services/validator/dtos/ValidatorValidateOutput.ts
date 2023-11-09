@@ -1,7 +1,12 @@
-/* TO DO: Replace this type with a custom one. */
-import { ValidationError } from "class-validator"
+interface IValidationError {
+  property: string
+  value?: any
+  constraints?: {
+    [type: string]: string
+  }
+}
 
 export interface IValidatorValidateOutput {
   isValid: boolean
-  errors: ValidationError[] | null
+  errors: IValidationError[] | null
 }
