@@ -9,7 +9,7 @@ import {
   TranslatorLanguageLabel,
   left,
 } from "@/shared/types"
-import { ChatServiceMock } from "../../../mocks/ChatServiceMock"
+import { ChatServiceMock } from "@/test/mocks/ChatServiceMock"
 
 describe("Interpreter > CreateSentenceUseCase", () => {
   const container = new Container()
