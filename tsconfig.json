@@ -11,16 +11,16 @@
     // "disableSolutionSearching": true,                 /* Opt a project out of multi-project reference checking when editing. */
     // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
     "paths": {
-      "@modules/*": ["./modules/*"],
-      "@application/*": ["./application/*"],
-      "@tests/*": ["./__tests__/*"],
-      "@useCases/*": ["./useCases/*"],
-      "@dtos/*": ["./dtos/*"],
-      "@core/*": ["./core/*"],
-      "@shared/*": ["./shared/*"],
-      "@infra/*": ["./infra/*"],
-      "@src/*": ["./src/*"],
-      "@index": ["./index.ts"]
+      "@/modules/*": ["./modules/*"],
+      "@/application/*": ["./application/*"],
+      "@/test/*": [".././test/*"],
+      "@/useCases/*": ["./useCases/*"],
+      "@/dtos/*": ["./dtos/*"],
+      "@/core/*": ["./core/*"],
+      "@/shared/*": ["./shared/*"],
+      "@/infra/*": ["./infra/*"],
+      "@/src/*": ["./src/*"],
+      "@/index": ["./index.ts"]
     },
     /* Language and Environment */
     "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
