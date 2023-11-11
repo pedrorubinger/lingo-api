@@ -50,14 +50,14 @@ export class ChatService implements IChatService {
 
       if (!message) {
         return left(
-          new AppError(ErrorCode.CHAT_SERVICE_NO_MESSAGE_RETURN, 500).get()
+          AppError.create({ code: ErrorCode.CHAT_SERVICE_NO_MESSAGE_RETURN })
         )
       }
 
       return right({ message })
     } catch (err: any) {
       console.log("[ERROR] ChatService > create:", err?.response?.data || err)
-      return left(new AppError().get())
+      return left(AppError.create())
     }
   }
 }

@@ -5,6 +5,7 @@ import { IController } from "@/core/index"
 import { CreateSentenceUseCase } from "@/application/modules/interpreter/useCases"
 import { CreateSentenceValidator } from "@/infra/modules/interpreter/validators"
 import { ValidatorService } from "@/infra/services"
+import { AppError, ErrorType } from "@/shared/types"
 
 export class CreateSentenceController
   implements IController<Request, Response>
@@ -14,7 +15,12 @@ export class CreateSentenceController
     const input = new CreateSentenceValidator({ sentence, language })
     const { isValid, errors } = await new ValidatorService().validate(input)
 
-    if (!isValid) return response.status(400).json(errors)
+    if (!isValid)
+      return response
+        .status(400)
+        .json(
+          AppError.create({ type: ErrorType.VALIDATION, errors, status: 400 })
+        )
 
     const useCase = container.get(CreateSentenceUseCase)
     const result = await useCase.exec({ sentence, language })

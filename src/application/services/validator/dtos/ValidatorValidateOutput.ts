@@ -1,4 +1,4 @@
-interface IValidationError {
+export interface IValidationError {
   property: string
   value?: any
   constraints?: {
