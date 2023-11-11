@@ -1,7 +1,7 @@
 import { Request, Response } from "express"
 
 import { container } from "@shared/ioc"
-import { IController } from "@core"
+import { IController } from "@core/index"
 import { CreateSentenceUseCase } from "@application/modules/interpreter/useCases"
 import { CreateSentenceValidator } from "@infra/modules/interpreter/validators"
 import { ValidatorService } from "@infra/services"
