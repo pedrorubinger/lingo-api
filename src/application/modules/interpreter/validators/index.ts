@@ -1,1 +1,1 @@
-export * from "@application/modules/interpreter/validators/ICreateSentenceValidator"
+export * from "@/application/modules/interpreter/validators/ICreateSentenceValidator"

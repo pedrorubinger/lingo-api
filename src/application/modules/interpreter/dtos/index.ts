@@ -1,1 +1,1 @@
-export * from "@application/modules/interpreter/dtos/CreateSentenceDTO"
+export * from "@/application/modules/interpreter/dtos/CreateSentenceDTO"

@@ -1,6 +1,6 @@
 import { Router } from "express"
 
-import { CreateSentenceController } from "@infra/modules/interpreter/controllers"
+import { CreateSentenceController } from "@/infra/modules/interpreter/controllers"
 
 const interpreterRoutes = Router()
 

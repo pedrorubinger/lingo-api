@@ -1,11 +1,11 @@
 import { inject, injectable } from "inversify"
 
-import { IUseCase } from "@core/index"
+import { IUseCase } from "@/core/index"
 import {
   ICreateSentenceInput,
   ICreateSentenceOutput,
-} from "@application/modules/interpreter/dtos"
-import { IChatService } from "@application/services"
+} from "@/application/modules/interpreter/dtos"
+import { IChatService } from "@/application/services"
 
 @injectable()
 export class CreateSentenceUseCase

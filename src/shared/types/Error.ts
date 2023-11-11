@@ -1,4 +1,4 @@
-import { ErrorCode } from "@shared/types/ErrorCode"
+import { ErrorCode } from "@/shared/types/ErrorCode"
 
 export interface IError {
   code: ErrorCode

@@ -2,8 +2,8 @@ import express from "express"
 import cors from "cors"
 import "reflect-metadata"
 
-import { router } from "@infra/http/routes"
-import "@shared/ioc"
+import { router } from "@/infra/http/routes"
+import "@/shared/ioc"
 
 const server = express()
 

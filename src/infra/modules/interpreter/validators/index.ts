@@ -1,1 +1,1 @@
-export * from "@infra/modules/interpreter/validators/CreateSentenceValidator"
+export * from "@/infra/modules/interpreter/validators/CreateSentenceValidator"

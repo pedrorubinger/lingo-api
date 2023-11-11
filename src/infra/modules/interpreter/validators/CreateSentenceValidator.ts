@@ -1,8 +1,8 @@
 import { IsEnum, IsString } from "class-validator"
 
-import { ValidatableInput } from "@core/index"
-import { ErrorCode, TranslatorLanguage } from "@shared/types"
-import { ICreateSentenceValidator } from "@application/modules/interpreter/validators"
+import { ValidatableInput } from "@/core/index"
+import { ErrorCode, TranslatorLanguage } from "@/shared/types"
+import { ICreateSentenceValidator } from "@/application/modules/interpreter/validators"
 
 export class CreateSentenceValidator
   extends ValidatableInput<ICreateSentenceValidator>

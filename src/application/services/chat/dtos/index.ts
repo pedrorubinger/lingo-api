@@ -1,1 +1,1 @@
-export * from "@application/services/chat/dtos/CreateCompletionDTO"
+export * from "@/application/services/chat/dtos/CreateCompletionDTO"

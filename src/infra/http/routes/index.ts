@@ -1,6 +1,6 @@
 import { Router } from "express"
 
-import { interpreterRoutes } from "@infra/http/routes/interpreter.routes"
+import { interpreterRoutes } from "@/infra/http/routes/interpreter.routes"
 
 const router = Router()
 

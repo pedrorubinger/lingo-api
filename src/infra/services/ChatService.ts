@@ -8,12 +8,12 @@ import {
   TranslatorLanguageLabel,
   left,
   right,
-} from "@shared/types"
-import { IChatService } from "@application/services"
+} from "@/shared/types"
+import { IChatService } from "@/application/services"
 import {
   ICreateTranslationInput,
   ICreateTranslationOutput,
-} from "@application/services/chat/dtos"
+} from "@/application/services/chat/dtos"
 
 @injectable()
 export class ChatService implements IChatService {

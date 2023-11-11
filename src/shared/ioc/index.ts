@@ -1,10 +1,10 @@
 import { Container } from "inversify"
 import { OpenAIApi } from "openai"
 
-import { OpenAIConfiguration } from "@infra/config"
-import { ChatService, ValidatorService } from "@infra/services"
-import { IChatService, IValidatorService } from "@application/services"
-import { CreateSentenceUseCase } from "@application/modules/interpreter/useCases"
+import { OpenAIConfiguration } from "@/infra/config"
+import { ChatService, ValidatorService } from "@/infra/services"
+import { IChatService, IValidatorService } from "@/application/services"
+import { CreateSentenceUseCase } from "@/application/modules/interpreter/useCases"
 
 export const container = new Container()
 

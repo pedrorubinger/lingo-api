@@ -1,7 +1,7 @@
 import dotenv from "dotenv"
 
-import { StageEnvironment } from "@shared/types"
-import { OpenAIConfiguration } from "@infra/config/openai"
+import { StageEnvironment } from "@/shared/types"
+import { OpenAIConfiguration } from "@/infra/config/openai"
 
 dotenv.config()
 

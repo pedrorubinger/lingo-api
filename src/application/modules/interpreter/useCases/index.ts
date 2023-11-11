@@ -1,1 +1,1 @@
-export * from "@application/modules/interpreter/useCases/CreateSentenceUseCase"
+export * from "@/application/modules/interpreter/useCases/CreateSentenceUseCase"

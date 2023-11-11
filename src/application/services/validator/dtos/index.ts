@@ -1,1 +1,1 @@
-export * from "@application/services/validator/dtos/ValidatorValidateOutput"
+export * from "@/application/services/validator/dtos/ValidatorValidateOutput"

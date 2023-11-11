@@ -1,4 +1,4 @@
-import { Either, IError, TranslatorLanguageLabel } from "@shared/types"
+import { Either, IError, TranslatorLanguageLabel } from "@/shared/types"
 
 export interface ICreateSentenceInput {
   sentence: string
