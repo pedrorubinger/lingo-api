@@ -50,7 +50,7 @@ export class ChatService implements IChatService {
 
       if (!message) {
         return left(
-          new AppError(ErrorCode.CHAT_SERVICE_NO_MESSAGE_RETURN, 400).get()
+          new AppError(ErrorCode.CHAT_SERVICE_NO_MESSAGE_RETURN, 500).get()
         )
       }
 
