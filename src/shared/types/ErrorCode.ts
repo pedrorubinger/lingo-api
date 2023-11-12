@@ -1,4 +1,5 @@
 export enum ErrorCode {
+  BAD_REQUEST = "BAD_REQUEST",
   INTERNAL = "INTERNAL_SERVER_ERROR",
   /* CreateSentence */
   SENTENCE_IS_REQUIRED = "SENTENCE_IS_REQUIRED",
