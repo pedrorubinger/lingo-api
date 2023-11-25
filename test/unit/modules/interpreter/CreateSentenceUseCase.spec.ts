@@ -39,7 +39,12 @@ describe("Interpreter > CreateSentenceUseCase", () => {
     expect.assertions(3)
 
     ChatServiceMock.createTranslation.mockRejectedValue(
-      left(new AppError(ErrorCode.CHAT_SERVICE_NO_MESSAGE_RETURN, 400).get())
+      left(
+        AppError.create({
+          code: ErrorCode.CHAT_SERVICE_NO_MESSAGE_RETURN,
+          status: 400,
+        })
+      )
     )
 
     try {
@@ -60,9 +65,7 @@ describe("Interpreter > CreateSentenceUseCase", () => {
   it("should throw an error when something goes wrong", async () => {
     expect.assertions(3)
 
-    ChatServiceMock.createTranslation.mockRejectedValue(
-      left(new AppError().get())
-    )
+    ChatServiceMock.createTranslation.mockRejectedValue(left(AppError.create()))
 
     try {
       await createSentenceUseCase.exec({
