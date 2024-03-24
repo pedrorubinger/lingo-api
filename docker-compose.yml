@@ -10,3 +10,22 @@ services:
       - .:/usr/src/app
     env_file:
       - .env
+    networks:
+      - lingo-network
+
+  db:
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - .docker/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - lingo-network
+
+networks:
+  lingo-network:
+    external: true
