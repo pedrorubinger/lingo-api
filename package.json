@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "nodemon -delay 500ms --watch 'src/' --exec 'ts-node -r tsconfig-paths/register --files src/index.ts' -e ts",
+    "clean": "rm -rf node_modules && npm cache clean --force && npm install",
     "docker:up": "docker-compose up --build",
     "docker:down": "docker-compose down",
     "eslint:fix": "eslint --fix",
